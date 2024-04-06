@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
 // Prime Factorization
 vector<int> primeFactorization(int n){
 	vector<int> facts;
@@ -27,3 +28,25 @@ long long binpow(long long a, long long n){
 	}
 	return res;
 }
+
+
+//Prime Factorization Using Sieve
+const int N=10000000;
+int pf[N+1];
+
+void pfs(){
+	for(int i=1;i<=N;i++) pf[i]=-1;
+
+	for(int i=2;i<=N;i++){
+		if(pf[i]==-1){
+			for(int j=i;j<=N;j+=i){
+				if(pf[j]==-1){
+					pf[j]=i;
+				}
+			}
+		}
+	}
+}
+
+
+
