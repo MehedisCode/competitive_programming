@@ -1,0 +1,13 @@
+unique(v.begin(), v.end());
+ - it will return an iterator pointing to the next element the of unique (sorted array) elements.
+ - new v will be like only skipping neighbour repeating elements. so to get unique elememts make sure
+   to sort the array.
+
+
+
+Quick Functions 
+  isupper() -> return 0 or 1
+  islower()
+  isspace()
+
+
